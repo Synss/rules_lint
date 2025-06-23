@@ -53,6 +53,7 @@ Linters which are not language-specific:
 | Shell                  | [shfmt]                   | [shellcheck]                     |
 | Starlark               | [Buildifier]              |                                  |
 | Swift                  | [SwiftFormat] (1)         |                                  |
+| TOML                   | [prettier-plugin-toml]    |                                  |
 | TSX                    | [Prettier]                | [ESLint]                         |
 | TypeScript             | [Prettier]                | [ESLint]                         |
 | YAML                   | [yamlfmt]                 |                                  |
@@ -75,6 +76,7 @@ Linters which are not language-specific:
 [buildifier]: https://github.com/keith/buildifier-prebuilt
 [prettier-plugin-sql]: https://github.com/un-ts/prettier
 [prettier-plugin-gherkin]: https://github.com/mapado/prettier-plugin-gherkin
+[prettier-plugin-toml]: https://www.npmjs.com/package/prettier-plugin-toml
 [prettier/plugin-xml]: https://github.com/prettier/plugin-xml
 [gofmt]: https://pkg.go.dev/cmd/gofmt
 [gofumpt]: https://github.com/mvdan/gofumpt

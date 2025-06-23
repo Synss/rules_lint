@@ -52,6 +52,7 @@ js_library(
         ":node_modules/@prettier/plugin-xml",
         ":node_modules/prettier-plugin-gherkin",
         ":node_modules/prettier-plugin-sql",
+        ":node_modules/prettier-plugin-toml",
     ],
 )
 

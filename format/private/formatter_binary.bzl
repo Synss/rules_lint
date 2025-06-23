@@ -13,6 +13,7 @@ TOOLS = {
     "Starlark": "buildifier",
     "Jsonnet": "jsonnetfmt",
     "Terraform": "terraform-fmt",
+    "TOML": "prettier",
     "Kotlin": "ktfmt",
     "Java": "java-format",
     "Scala": "scalafmt",
@@ -75,6 +76,7 @@ FIX_FLAGS = {
     "gofmt": "-w",
     "buf": "format --write --disable-symlinks",
     "terraform-fmt": "fmt",
+    "taplo": "format",
     "jsonnetfmt": "--in-place",
     # Force exclusions in the configuration file to be honored even when file paths are supplied
     # as command-line arguments; see

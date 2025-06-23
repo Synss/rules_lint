@@ -77,6 +77,13 @@ bats_load_library "bats-assert"
     assert_output --partial "+ prettier --write example/src/hello.sql"
 }
 
+@test "should run prettier on TOML" {
+    run bazel run //format/test:format_TOML_with_prettier
+    assert_success
+
+    assert_output --partial "+ prettier --write_example/src/hello.toml"
+}
+
 @test "should run ruff on Python" {
     run bazel run //format/test:format_Python_with_ruff
     assert_success

@@ -8,6 +8,7 @@ const config = {
     require("prettier-plugin-sql"),
     require("@prettier/plugin-xml"),
     require("prettier-plugin-gherkin"),
+    require("prettier-plugin-toml"),
   ],
 };
 

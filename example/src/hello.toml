@@ -1,0 +1,5 @@
+[pif]
+key="value"
+[pif.paf]
+list=["a", "b",
+"c"]
