@@ -72,6 +72,11 @@ bats_load_library "bats-assert"
     assert_output --partial "+ prettier --write example/src/hello.graphql"
 }
 
+@test "should run npm-groovy-lint on Groovy" {
+    run bazel run //format/test:format_Groovy_with_npm-groovy-lint
+    assert_success
+}
+
 @test "should run prettier on SQL" {
     run bazel run //format/test:format_SQL_with_prettier
     assert_success
