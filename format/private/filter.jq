@@ -7,6 +7,7 @@ with_entries(select(.key | IN(
     "Go",
     "Gherkin",
     "GraphQL",
+    "Groovy",
     "HCL",
     "HTML",
     "Java",

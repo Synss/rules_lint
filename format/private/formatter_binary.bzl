@@ -9,6 +9,7 @@ TOOLS = {
     # NB: includes LESS and SASS
     "CSS": "prettier",
     "GraphQL": "prettier",
+    "Groovy": "npm-groovy-lint",
     "HTML": "prettier",
     "Python": "ruff",
     "Starlark": "buildifier",
@@ -54,6 +55,7 @@ CHECK_FLAGS = {
     "djlint": "--format-css --format-js --check",
     "ktfmt": "--set-exit-if-changed --dry-run",
     "gofmt": "-l",
+    "npm-groovy-lint": "--format --nolintafter --noserver",  # no check mode
     "buf": "format -d --exit-code --disable-symlinks",
     "taplo": "format --check --diff",
     "terraform-fmt": "fmt -check -diff",
@@ -79,6 +81,7 @@ FIX_FLAGS = {
     "java-format": "--replace",
     "ktfmt": "",
     "gofmt": "-w",
+    "npm-groovy-lint": "--format --nolintafter --noserver",
     "buf": "format --write --disable-symlinks",
     "taplo": "format",
     "terraform-fmt": "fmt",

@@ -29,6 +29,12 @@ filegroup(
 )
 
 filegroup(
+    name = "groovy",
+    srcs = ["hello.groovy"],
+    tags = ["groovy"],
+)
+
+filegroup(
     name = "yaml_docs",
     srcs = ["config.yaml"],
     tags = ["lint-with-yamllint"],
