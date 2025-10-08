@@ -37,6 +37,7 @@ Linters which are not language-specific:
 | Go                     | [gofmt] or [gofumpt]      |                                  |
 | Gherkin                | [prettier-plugin-gherkin] |                                  |
 | GraphQL                | [Prettier]                |                                  |
+| Groovy                 | [Groovy]                  |                                  |
 | HCL (Hashicorp Config) | [terraform] fmt           |                                  |
 | HTML                   | [Prettier]                |                                  |
 | JSON                   | [Prettier]                |                                  |
