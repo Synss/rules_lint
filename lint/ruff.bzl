@@ -101,6 +101,9 @@ def ruff_action(ctx, executable, srcs, config, stdout, exit_code = None, env = {
         args = ctx.actions.args()
         args.add("check")
         args.add("--force-exclude")
+        # HACK, https://github.com/aspect-build/rules_lint/issues/690
+        if stdout.path.endswith("raw_machine_report"):
+            args.add("--output-format sarif")
         args.add_all(srcs)
 
         if exit_code:
