@@ -32,6 +32,7 @@ TOOLS = {
     "Rust": "rustfmt",
     "XML": "prettier",
     "Gherkin": "prettier",
+    "Groovy": "groovy-format",
     "F#": "fantomas",
     "C#": "csharpier",
 }
@@ -51,6 +52,7 @@ BUILTIN_TOOL_LABELS = {
 CHECK_FLAGS = {
     "buildifier": "-mode=check",
     "cue-fmt": "fmt --check",
+    "groovy-format": "",
     "swiftformat": "--lint",
     "prettier": "--check",
     "ruff": "format --check --force-exclude --diff",
@@ -76,6 +78,7 @@ FIX_FLAGS = {
     "buildifier": "-mode=fix",
     "cue-fmt": "fmt",
     "djlint": "--format-css --format-js --reformat",
+    "groovy-format": "--format",
     "swiftformat": "",
     "prettier": "--write",
     # Force exclusions in the configuration file to be honored even when file paths are supplied
